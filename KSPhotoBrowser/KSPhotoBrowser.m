@@ -94,6 +94,7 @@ static const NSTimeInterval kSpringAnimationDuration = 0.5;
         _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height-40, self.view.bounds.size.width, 20)];
         _pageControl.numberOfPages = _photoItems.count;
         _pageControl.currentPage = _currentPage;
+        _pageControl.hidesForSinglePage = YES;
         [self.view addSubview:_pageControl];
     } else {
         _pageLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height-40, self.view.bounds.size.width, 20)];
